@@ -3,7 +3,7 @@ import { IoCartSharp } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import '../assets/css/Navbar.css';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import logo from '../assets/images/logo.png'; // যদি import করতে চাও
 
 const NavItems = [
@@ -35,6 +35,20 @@ const NavbarItems = () => {
 }
 
 export default function Navbar() {
+
+	const [isScrolled, setIsScrolled] = useState(false);
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 50) {
+				setIsScrolled(true);
+				} else {
+					setIsScrolled(false);
+			}
+		};
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -42,8 +56,10 @@ export default function Navbar() {
     }
 
     return (
-        <header className="fixed nav_header w-full top-0 z-50 px-6 text-white">
-            <nav className="container flex justify-between py-6 mx-auto">
+        <header className={`fixed nav_header w-full top-0 z-50 px-6 ${
+			isScrolled ? 'bg-white text-slate-950 shadow-md' : 'bg-transparent text-white'
+		} transition-all duration-500 ease-in-out`}>
+            <nav className="container flex justify-between py-3 mx-auto">
                 <Link to="/" className="text-2xl">
                     <img className="site_logo for_small_device bg-white rounded-sm" src="./src/assets/images/logo.png" alt="logo" />
                     {/* <img className="site_logo" src={logo} alt="logo" /> */}
@@ -55,7 +71,7 @@ export default function Navbar() {
                         }
                     </button>
                 </div>
-                <div className="hidden md:block">
+                <div className="hidden md:flex">
                     <NavbarItems />
                 </div>
 

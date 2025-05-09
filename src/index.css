@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.section_conatiner{
+	@apply container flex justify-between py-6 mx-auto;
+}
+
+@media (max-width: 768px){
+	.section_conatiner{
+		padding: 0 26px;
+	}
+}

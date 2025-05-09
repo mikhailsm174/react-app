@@ -16,6 +16,7 @@ const hero = ()=> {
 				<h2 className='text-4xl lg:text-6xl'>Make your interior moreminimalistic & modern</h2>
 				<p className='pt-8 text-xl'>Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
 			</div>
+			<div className='herro_bottom_shadow'></div>
 		</section>
 	</>
   )

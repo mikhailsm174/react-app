@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import contact from "./pages/contact";
 import shop from "./pages/Shop";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import './app.css';
 
@@ -18,6 +19,7 @@ export default function App() {
 					<Route exact path="/contact" Component={contact} />
 					<Route exact path="/shop" Component={shop} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 	);
 }

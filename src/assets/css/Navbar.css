@@ -1,8 +1,4 @@
 
-.nav_header{
-	/* border-bottom: 1px solid #ccc; */
-}
-
 .nav_ul{
 	display: flex;
 	align-items: center;
@@ -20,6 +16,7 @@
 }
 
 
+/* for hamburger menu */
 @media (max-width: 767px) {
 	ul.for_small_device{
 		background-color: wheat;

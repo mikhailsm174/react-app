@@ -1,8 +1,4 @@
 
-.nav_header{
-	border-bottom: 1px solid #ccc;
-}
-
 .nav_ul{
 	display: flex;
 	align-items: center;
@@ -18,3 +14,23 @@
 	width: 60px;
 	height: 50px;
 }
+
+
+/* for hamburger menu */
+@media (max-width: 767px) {
+	ul.for_small_device{
+		background-color: wheat;
+		height: 100vh;
+		padding-top: 100px;
+		top: 0;
+	}
+
+	button.for_small_device{
+		z-index: 2;
+	}
+
+	img.for_small_device{
+		position: relative;
+		z-index: 2;
+	}
+  }

@@ -1,0 +1,52 @@
+.heroSection{
+	background-image: url(../images/banner.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.hero_search_section {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .input_wrapper {
+	position: relative;
+	width: 100%;
+  }
+
+  .hero_input {
+	width: 100%;
+	padding: 8px 35px 8px 10px;
+	box-sizing: border-box;
+  }
+
+  .search_icon_section {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 6px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+  }
+
+
+
+  @media (max-width: 767px) {
+	.hero_search_section{
+		width: 90%;
+	}
+	.input_wrapper {
+	  width: 100%;
+	  margin: 0 auto;
+	}
+  }

@@ -7,6 +7,14 @@
 	@apply container flex justify-between py-6 mx-auto;
 }
 
+.all_hero_section_components{
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 @media (max-width: 768px){
 	.section_conatiner{
 		padding: 0 26px;

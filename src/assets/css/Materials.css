@@ -1,0 +1,6 @@
+
+@media (max-width:768px) {
+	.section_conatiner.materials_section_conatiner{
+		display: block;
+	}
+}

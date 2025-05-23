@@ -1,4 +1,4 @@
-
+import { FaArrowRight } from "react-icons/fa";
 import React, { useState } from 'react';
 import "../assets/css/BestProducts.css";
 import Chair from "./Chair";
@@ -19,9 +19,8 @@ const BestProductsList = ({ activeTab, setActiveTab }) => (
 			<li key={item.key}>
 				<button
 					onClick={() => setActiveTab(item.key)}
-					className={`lg:px-3 px-2 py-1 rounded-full transition ${
-					activeTab === item.key ? 'bg-white' : 'hover:bg-white'
-					}`}>
+					className={`lg:px-3 px-2 py-1 rounded-full transition ${activeTab === item.key ? 'bg-white' : 'hover:bg-white'
+						}`}>
 					{item.label}
 				</button>
 			</li>
@@ -56,6 +55,10 @@ function BestProducts() {
 			</div>
 			<div className='section_conatiner flex justify-center'>
 				{renderActiveComponent()}
+			</div>
+
+			<div className='w-full text-center mt-10 flex justify-center'>
+				<button className='flex justify-center items-center text-primary'>View All <FaArrowRight className='ml-4' /></button>
 			</div>
 		</section>
 	);

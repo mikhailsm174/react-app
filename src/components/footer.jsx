@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function footer() {
-	return(
+	return (
 		<>
 			<section className="w-100 py-10 bg-slate-200">
 				<div className="section_conatiner">

@@ -1,6 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
 import "../assets/css/Materials.css"
 import React from 'react'
+import  materialImg  from "../assets/images/material3.png";
 
 function Materials() {
   return (
@@ -17,7 +18,7 @@ function Materials() {
 				</div>
 
 				<div>
-					<img src="./src/assets/images/material3.png" alt="" />
+					<img src={materialImg} alt="" />
 				</div>
 			</div>
 		</section>

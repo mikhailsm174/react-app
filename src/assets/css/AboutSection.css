@@ -1,0 +1,123 @@
+/* AboutPage.css */
+.about-container {
+	width: 100%;
+	font-family: Arial, sans-serif;
+  }
+
+  .about-hero {
+	text-align: center;
+	margin-bottom: 3rem;
+  }
+
+  .about-hero h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	color: #333;
+  }
+
+  .about-hero p {
+	font-size: 1.1rem;
+	color: #555;
+	max-width: 700px;
+	margin: auto;
+  }
+
+  .category-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2rem;
+  }
+
+  .category-card {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	padding: 1rem;
+	text-align: center;
+	transition: transform 0.3s ease;
+  }
+
+  .category-card:hover {
+	transform: translateY(-5px);
+  }
+
+  .category-card img {
+	max-width: 100%;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+  }
+
+  .category-card h2 {
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+	color: #222;
+  }
+
+  .category-card p {
+	font-size: 0.95rem;
+	color: #666;
+	line-height: 1.4;
+  }
+
+  .more_about_btn_section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+  }
+
+  .more_about_btn{
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color: darksalmon;
+	color: white;
+	transition: all .3s;
+  }
+
+  .story_section{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #2b2b2b;
+	padding: 40px 20px;
+	width: 100%;
+	margin-top: 50px;
+  }
+
+  .section {
+	margin-bottom: 60px;
+  }
+
+  .story-top {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 40px;
+  }
+
+  .text-block {
+	flex: 1;
+	min-width: 280px;
+  }
+
+  .image-block {
+	flex: 1;
+	min-width: 280px;
+  }
+
+  .chair-image {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+  }
+
+  .info-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: space-between;
+  }
+
+  .info-box {
+	flex: 1;
+	min-width: 250px;
+	max-width: 32%;
+  }

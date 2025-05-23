@@ -1,0 +1,51 @@
+
+  .info-container {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+  }
+
+  .info-box {
+	flex: 1 1 30%;
+	margin: 1rem 0;
+  }
+
+  .icon-circle {
+	width: 70px;
+	height: 70px;
+	margin: 0 auto 1rem auto;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+	color: white;
+  }
+
+  .info-box h3 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+	color: #000;
+  }
+
+  .info-box p {
+	font-size: 1rem;
+	color: #333;
+	margin: 0.2rem 0;
+  }
+
+  @media (max-width: 768px) {
+	.info-container {
+	  flex-direction: column;
+	  padding: 1.5rem;
+	}
+
+	.info-box {
+	  flex: 1 1 100%;
+	}
+  }

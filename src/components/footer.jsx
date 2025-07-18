@@ -27,9 +27,11 @@ export default function footer() {
 
 						<div className="flex flex-col gap-y-3">
 							<h6 className="text-primary text-xl font-bold">Follow Us</h6>
-							<a href="https://www.facebook.com/Brokendream.net" target="_blank">Facebook</a>
-							<a href="https://x.com/selim_sh2027790" target="_blank">Twitter</a>
-							<a href="https://www.linkedin.com/in/selim-reza-718712218/" target="_blank">LinkedIn</a>
+							<div className="text-blue-400 flex flex-col leading-loose">
+								<a href="https://www.facebook.com/Brokendream.net" target="_blank">Facebook</a>
+								<a href="https://x.com/selim_sh2027790" target="_blank">Twitter</a>
+								<a href="https://www.linkedin.com/in/selim-reza-718712218/" target="_blank">LinkedIn</a>
+							</div>
 						</div>
 					</div>
 

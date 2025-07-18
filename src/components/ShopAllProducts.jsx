@@ -21,41 +21,258 @@ import sofa2 from "../assets/images/products/sofa-2.png";
 import sofa3 from "../assets/images/products/sofa-3.png";
 import sofa4 from "../assets/images/products/sofa-4.png";
 
+// Sample Product List
 const products = [
-	{ id: 1, name: "Headphones", price: "$99.00", image: beds1 },
-	{ id: 2, name: "Wireless Earbuds", price: "$199.00", image: beds2 },
-	{ id: 3, name: "Speaker", price: "$79.00", image: beds3 },
-	{ id: 4, name: "Headphone", price: "$299.00", image: beds4 },
-	{ id: 5, name: "Smartwatch", price: "$149.00", image: chair1 },
-	{ id: 6, name: "Smartphone", price: "$299.00", image: chair2 },
-	{ id: 7, name: "Smartphone", price: "$299.00", image: chair3 },
-	{ id: 8, name: "Camera", price: "$899.00", image: chair4 },
-	{ id: 9, name: "Camera", price: "$899.00", image: lamp1 },
-	{ id: 10, name: "Camera", price: "$899.00", image: lamp2 },
-	{ id: 11, name: "Camera", price: "$899.00", image: lamp3 },
-	{ id: 12, name: "Camera", price: "$899.00", image: lamp4 },
-	{ id: 13, name: "Camera", price: "$899.00", image: sofa1 },
-	{ id: 14, name: "Camera", price: "$899.00", image: sofa2 },
-	{ id: 15, name: "Camera", price: "$899.00", image: sofa3 },
-	{ id: 16, name: "Camera", price: "$899.00", image: sofa4 },
-	{ id: 17, name: "Headphones", price: "$99.00", image: beds1 },
-	{ id: 18, name: "Wireless Earbuds", price: "$199.00", image: beds2 },
-	{ id: 19, name: "Speaker", price: "$79.00", image: beds3 },
-	{ id: 20, name: "Headphone", price: "$299.00", image: beds4 },
-	{ id: 5, name: "Smartwatch", price: "$149.00", image: chair1 },
-	{ id: 10, name: "Camera", price: "$899.00", image: lamp2 },
-	{ id: 8, name: "Camera", price: "$899.00", image: chair4 },
-	{ id: 14, name: "Camera", price: "$899.00", image: sofa2 },
-	{ id: 12, name: "Camera", price: "$899.00", image: lamp4 },
-	{ id: 16, name: "Camera", price: "$899.00", image: sofa4 },
-	{ id: 4, name: "Headphone", price: "$299.00", image: beds4 },
-	{ id: 10, name: "Camera", price: "$899.00", image: lamp2 },
-	{ id: 8, name: "Camera", price: "$899.00", image: chair4 },
-	{ id: 15, name: "Camera", price: "$899.00", image: sofa3 },
-	{ id: 13, name: "Camera", price: "$899.00", image: sofa1 },
+	{
+		id: 1,
+		name: "Beds",
+		price: "$99.00",
+		image: beds1,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 2,
+		name: "Wireless Earbuds",
+		price: "$199.00",
+		image: beds2,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 3,
+		name: "Speaker",
+		price: "$79.00",
+		image: beds3,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 4,
+		name: "Headphone",
+		price: "$299.00",
+		image: beds4,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 5,
+		name: "Smartwatch",
+		price: "$149.00",
+		image: chair1,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 6,
+		name: "Smartphone",
+		price: "$299.00",
+		image: chair2,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 7,
+		name: "Smartphone",
+		price: "$299.00",
+		image: chair3,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 8,
+		name: "Camera",
+		price: "$899.00",
+		image: chair4,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 9,
+		name: "Camera",
+		price: "$899.00",
+		image: lamp1,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 10,
+		name: "Camera",
+		price: "$899.00",
+		image: lamp2,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 11,
+		name: "Camera",
+		price: "$899.00",
+		image: lamp3,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 12,
+		name: "Camera",
+		price: "$899.00",
+		image: lamp4,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 13,
+		name: "Camera",
+		price: "$899.00",
+		image: sofa1,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 14,
+		name: "Camera",
+		price: "$899.00",
+		image: sofa2,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 15,
+		name: "Camera",
+		price: "$899.00",
+		image: sofa3,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 16,
+		name: "Camera",
+		price: "$899.00",
+		image: sofa4,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 17,
+		name: "Headphones",
+		price: "$99.00",
+		image: beds1,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 18,
+		name: "Wireless Earbuds",
+		price: "$199.00",
+		image: beds2,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 19,
+		name: "Speaker",
+		price: "$79.00",
+		image: beds3,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 20,
+		name: "Headphone",
+		price: "$299.00",
+		image: beds4,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 21,
+		name: "Smartwatch",
+		price: "$149.00",
+		image: chair1,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 22,
+		name: "Camera",
+		price: "$899.00",
+		image: lamp2,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 23,
+		name: "Camera",
+		price: "$899.00",
+		image: chair4,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 24,
+		name: "Camera",
+		price: "$899.00",
+		image: sofa2,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 25,
+		name: "Camera",
+		price: "$899.00",
+		image: lamp4,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 26,
+		name: "Camera",
+		price: "$899.00",
+		image: sofa4,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 27,
+		name: "Headphone",
+		price: "$299.00",
+		image: beds4,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 28,
+		name: "Camera",
+		price: "$899.00",
+		image: lamp2,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 29,
+		name: "Camera",
+		price: "$899.00",
+		image: chair4,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 30,
+		name: "Camera",
+		price: "$899.00",
+		image: sofa3,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
+
+	{
+		id: 31,
+		name: "Camera",
+		price: "$899.00",
+		image: sofa1,
+		description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur sunt facilis molestias minus aperiam architecto beatae soluta eaque tempora suscipit magni quod reiciendis eligendi earum, adipisci velit. Consectetur doloremque quos incidunt deleniti aperiam deserunt nesciunt earum cupiditate minus eos? Harum quisquam, dolores tempore eum repudiandae repellendus ipsam a enim?",
+	},
 ];
 
-const Shop = () => {
+const ShopAllProducts = ({ onProductClick }) => {
 	const [currentPage, setCurrentPage] = useState(1);
 	const itemsPerPage = 12;
 
@@ -83,7 +300,11 @@ const Shop = () => {
 
 						<div className="products-grid">
 							{currentItems.map((item) => (
-								<div key={item.id} className="product-card">
+								<div
+									key={item.id}
+									className="product-card"
+									onClick={() => onProductClick && onProductClick(item)}
+								>
 									<img src={item.image} alt={item.name} />
 									<h3>{item.name}</h3>
 									<p>{item.price}</p>
@@ -117,4 +338,4 @@ const Shop = () => {
 	);
 };
 
-export default Shop;
+export default ShopAllProducts;

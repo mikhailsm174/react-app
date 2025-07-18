@@ -113,7 +113,7 @@
   }
 
   .product-card:hover {
-	transform: translateY(-4px);
+	/* transform: translateY(-4px); */
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   }
 
@@ -180,7 +180,7 @@
 	}
   }
 
-  @media (max-width: 575px) {
+  @media (max-width: 425px) {
 	.products-grid {
 	  grid-template-columns: 1fr;
 	}
@@ -189,6 +189,12 @@
 	.sort-dropdown {
 	  font-size: 13px;
 	  padding: 10px;
+	}
+  }
+
+  @media (max-width: 320px){
+	.products-area{
+		width: 100%;
 	}
   }
 
@@ -207,7 +213,7 @@
 	border-radius: 6px;
 	cursor: pointer;
 	font-weight: 500;
-	transition: background 0.3s ease;
+	transition: 0.3s ease;
   }
 
   .pagination button:hover {

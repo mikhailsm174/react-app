@@ -60,6 +60,8 @@ function BestProducts() {
 			<div className='w-full text-center mt-10 flex justify-center'>
 				<button className='flex justify-center items-center text-primary'>View All <FaArrowRight className='ml-4' /></button>
 			</div>
+
+
 		</section>
 	);
 }

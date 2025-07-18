@@ -5,7 +5,14 @@ function ContactHeroSection() {
   return (
 	<>
 		<section className='contact_hero_section all_hero_section_components'>
-
+			<div className='contact_hero_section_content'>
+				<div className='w-1/2'>
+					lorem50
+				</div>
+				<div >
+					img
+				</div>
+			</div>
 		</section>
 	</>
   )

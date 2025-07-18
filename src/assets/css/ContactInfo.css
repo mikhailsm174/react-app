@@ -41,11 +41,19 @@
 
   @media (max-width: 768px) {
 	.info-container {
-	  flex-direction: column;
+	  /* flex-direction: column; */
+	  justify-content: center;
 	  padding: 1.5rem;
 	}
 
 	.info-box {
 	  flex: 1 1 100%;
+	}
+  }
+
+  @media (max-width: 599px){
+	.info-box{
+		border: 1px solid lightgray;
+		padding: 10px 0;
 	}
   }
